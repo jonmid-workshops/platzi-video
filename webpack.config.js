@@ -27,15 +27,16 @@ module.exports = {
             {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
-                use: {
-                    loader: "babel-loader",
-                    options: {
-                        presets: ['@babel/preset-env','@babel/preset-react']
-                    }
-                }
+                use: ['babel-loader']
+                // use: {
+                //     loader: "babel-loader",
+                //     options: {
+                //         presets: ['@babel/preset-env','@babel/preset-react']
+                //     }
+                // }
             },
             {
-                test: /\.css$/,
+                test: /\.(css|scss)$/,
                 use: [
                     {loader: MiniCssExtractPlugin.loader},
                     "css-loader"
