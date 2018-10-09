@@ -16,7 +16,7 @@ const cleanWebpackPlugin = new CleanWebpackPlugin(['dist'], {root: __dirname});
 
 module.exports = {
     entry: {
-        platzivideo: path.resolve(__dirname, 'src/index.js'),
+        home: path.resolve(__dirname, 'src/entries/home.js'),
     },
     output: {
         path: path.resolve(__dirname, 'dist'),

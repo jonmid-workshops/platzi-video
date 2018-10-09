@@ -32,6 +32,15 @@
     >> npm run build:dev
 
 
+(3). CICLO DE VIDA DE UN COMPONENETE:
+    -> Montado
+    -> Actualizacion
+    -> Desmontado
+    -> Manejo de errores
+
+(3). TIPOS DE COMPONENTES: (CONSULTAR)
 
 
-ULTIMO VIDEO VISTO: 3.12
+
+
+ULTIMO VIDEO VISTO: 4.18
