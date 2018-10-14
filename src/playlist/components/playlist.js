@@ -3,17 +3,13 @@
 import React from 'react';
 import Media from './media.js';
 import './playlist.css';
-import Play from '../../icons/components/play';
 
 function Playlist(props) {
-    const playlist = props.data.categories[0].playlist;
     return (
         <div className="Playlist">
-            <Play size={100} color="red"/>
             {
-                playlist.map((item) => {
-                    {/* return <Media openModal={props.handleOpenModal} {...item} key={item.id} /> */}
-                    return <Media key={item.id} {...item} />
+                props.playlist.map((item) => {
+                    return <Media handleClick={props.handleClick} {...item} key={item.id} />
                 })
             }
         </div>
