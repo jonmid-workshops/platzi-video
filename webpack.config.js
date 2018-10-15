@@ -22,6 +22,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'js/[name].[hash].js'
     },
+    devtool: 'eval-source-map',
     module: {
         rules: [
             {
@@ -49,7 +50,7 @@ module.exports = {
                     options: {
                         limit: 10000,
                         fallback: 'file-loader',
-                        name: 'images/[name].[hash].[ext]',
+                        name: './images/[name].[hash].[ext]',
                     }
                 }
             }
