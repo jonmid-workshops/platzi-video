@@ -29,12 +29,6 @@ module.exports = {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: ['babel-loader']
-                // use: {
-                //     loader: "babel-loader",
-                //     options: {
-                //         presets: ['@babel/preset-env','@babel/preset-react']
-                //     }
-                // }
             },
             {
                 test: /\.(css|scss)$/,
@@ -50,7 +44,9 @@ module.exports = {
                     options: {
                         limit: 10000,
                         fallback: 'file-loader',
-                        name: './images/[name].[hash].[ext]',
+                        // name: './images/[name].[hash].[ext]',
+                        name: '[name].[ext]',
+                        outputPath: 'images/'
                     }
                 }
             }
